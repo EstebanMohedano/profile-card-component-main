@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style> 
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .main{      
+      background: 
+        url("./images/bg-pattern-top.svg") top -500px left -200px no-repeat,
+        url("./images/bg-pattern-bottom.svg") bottom -500px right -300px no-repeat, 
+        rgba(20, 145, 145, 1);
+      width: 100%;
+      height: 96vh;
+      display: flex;
+      justify-content: center;      
+      align-items: center;
+      font-family: 'Quicksand', Verdana, sans-serif;
+    }
+
+    .card{
+      position: absolute;
+      width: 350px;
+      height: 380px;
+      border-radius: 1rem;
+      background-color: white;
+      background: url("./images/bg-pattern-card.svg") no-repeat, rgba(255, 255, 255, 1);
+    }
+
+    .image{
+      position: relative; 
+      top: 95px;            
+      margin-left: auto;
+      margin-right: auto;
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: 5px solid white;      
+      background: url("./images/image-victor.jpg") no-repeat, rgba(255, 255, 255, 1);
+    }
+    
+    .bodyCard{
+      position: relative;      
+      line-height: 2rem;
+      top: 100px;
+      width: 100%; 
+      height: 175px;
+      text-align: center;
+    }
+    .bodyCard brown {
+      font-size: 1.2rem;
+      font-weight: bold;      
+    }
+    .bodyCard span {
+      font-weight: bold;      
+      color: rgba(0, 0, 0, 0.4);
+    }
+    .bottomCard{
+      position: relative;
+      border: 2px solid rgba(89, 94, 94, 0.2) ;            
+      display: flex;
+      justify-self: center;
+      align-items: center;      
+      width: 100%;
+      height: 100px;
+      
+    }
+    .redes{
+      display: grid;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      width: 33.32%;      
+    }
+
+    .redes a { 
+      font-size: 11px;
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.3);
+    }
+    @media screen and (max-width: 576px) {
+      .main{
+      background: 
+      url("./images/bg-pattern-top.svg") top -500px left -700px no-repeat,
+      url("./images/bg-pattern-bottom.svg") bottom -500px right -700px no-repeat, 
+      rgba(20, 145, 145, 1);
+      }
+    }
+    @media screen and (min-width: 577px) and (max-width: 800px) {
+      .main{
+      background: 
+      url("./images/bg-pattern-top.svg") top -500px left -600px no-repeat,
+      url("./images/bg-pattern-bottom.svg") bottom -500px right -600px no-repeat, 
+      rgba(20, 145, 145, 1);
+      }
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
+      .main{
+      background: 
+      url("./images/bg-pattern-top.svg") top -500px left -600px no-repeat,
+      url("./images/bg-pattern-bottom.svg") bottom -500px right -600px no-repeat, 
+      rgba(20, 145, 145, 1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="card">      
+      <div class="image"></div>
+      <div class="bodyCard">
+        <brown>Victor Crest</brown><span> 26</br>
+        London</span>
+      </div>
+      <div class="bottomCard">
+        <div class="redes">
+          <brown>80K</brown>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Followers</a>          
+        </div>
+        <div class="redes">
+          <brown>803K</brown>
+          <a href="http://" target="_blank" rel="noopener noreferrer">Likes</a>          
+        </div>
+        <div class="redes">
+          <brown>1.4K</brown>          
+          <a href="http://" target="_blank" rel="noopener noreferrer">Photos</a>          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
